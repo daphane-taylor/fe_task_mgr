@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<h2>Home</h2>
+<p style="text-align: center">This is a full-stack web application that allows users to manage tasks through a clean, Bootstrap-styled interface. It's structured with a frontend (running on port 5001) that communicates with a separate backend API (running on port 5000). The application implements full CRUD (Create, Read, Update, Delete) operations for tasks, where each task has a name, summary, description, and completion status.
+The separation of frontend and backend makes it scalable and maintainable, allowing for future expansion or modification of either component independently.</p>
+<hr>
+
+<h3 style="text-align:center">Potential Uses:</h3>
+<div style="display: flex; flex-direction:row; justify-items:center;">
+	<div style="margin:10px;">	
+		<h5>Personal Task Management</h5>
+
+		<ul>
+			<li>Track personal to-do items</li>
+			<li>Manage daily, weekly, or long-term projects</li>
+			<li>Keep notes and descriptions for complex tasks</li>
+		</ul>
+	</div>
+	<div style="margin:10px;">
+		<h5>Team Project Management</h5>
+
+		<ul>
+			<li>Coordinate team activities</li>
+			<li>Track project milestones</li>
+			<li>Share task details and progress</li>
+		</ul>
+	</div>
+	<div style="margin:10px;">
+		<h5>Educational Environment</h5>
+
+		<ul>
+			<li>Track student assignments</li>
+			<li>Manage course projects</li>
+			<li>Organize teaching materials</li>
+		</ul>
+	</div>
+	<div style="margin:10px;">
+		<h5>Small Business Operations</h5>
+
+		<ul>
+			<li>Track customer orders</li>
+			<li>Manage inventory tasks</li>
+			<li>Schedule maintenance activities</li>
+		</ul>
+		<hr>
+	</div>
+</div>
+<div style="display:flex; flex-direction:row; justify-content:center;">
+	<div style="margin:10px;">	
+		<h3 style="text-align:center">Key Features:</h3>
+	</div>
+	<div style="margin:10px; align-items:center;">
+		<ol>
+			<li>Create new tasks with detailed descriptions</li>
+			<li>View a list of all tasks in a organized table</li>
+			<li>Edit existing task details</li>
+			<li>Delete single or multiple tasks</li>
+			<li>Responsive design that works on both desktop and mobile</li>
+			<li>Clean user interface using Bootstrap</li>
+		</ol>
+	</div>
+</div>
+<hr>
+{% endblock content %}
